@@ -1,0 +1,21 @@
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\appsettings.json
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\Curso .Net API Rest.exe
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\Curso .Net API Rest.deps.json
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\Curso .Net API Rest.runtimeconfig.json
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\Curso .Net API Rest.dll
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\ref\Curso .Net API Rest.dll
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\bin\Debug\net6.0\Curso .Net API Rest.pdb
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.csproj.AssemblyReference.cache
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.AssemblyInfoInputs.cache
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.AssemblyInfo.cs
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.csproj.CoreCompileInputs.cache
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\scopedcss\bundle\Curso .Net API Rest.styles.css
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.dll
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\ref\Curso .Net API Rest.dll
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.pdb
+C:\Users\maycon.oliveira\Desktop\Curso .Net API Rest\Treinamento API\obj\Debug\net6.0\Curso .Net API Rest.genruntimeconfig.cache
