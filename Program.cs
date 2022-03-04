@@ -1,9 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 var configuration = app.Configuration;
 ProductData.Init(configuration);
+
+builder.Services.AddDbContext<AppDBContext>(); //configura o DbContextdotnet
 
 app.MapGet("/", () => "Hello World!");
 app.MapGet("/p1", () => "Hello Word 2!");
@@ -14,7 +17,7 @@ app.MapGet("/getproduct", ([FromQuery] string dateStart, [FromQuery] string date
 });
 // https://localhost:7219/getproduct?datestart=x&dateend=y
 
-//Requisição
+//Requisição do cabeçalho ao
 app.MapGet("/getproductheader", (HttpRequest request) => {
     return request.Headers["product-code"].ToString();
 });
@@ -24,7 +27,7 @@ app.MapGet("/getproductheader", (HttpRequest request) => {
 app.MapPost("/products", (Product product) => {
     ProductData.AddProduto(product);
     //status code
-    return Results.Created("/products/"+product.code, product.code);
+    return Results.Created("/products/"+product.code, product.code); //Results - função de resultados da requisição
 });
 
 app.MapGet("/products/{code}", ([FromRoute] int code) => {
@@ -37,9 +40,16 @@ app.MapGet("/products/{code}", ([FromRoute] int code) => {
     }
 });
 
-app.MapPut("/products", (Product product) => {
+// app.MapPut("/products", (Product product) => {
+//     //obtem o produto
+//     var productSaved = ProductData.getProduct(product.code);
+//     //edita produto
+//     productSaved.name = product.name;
+//     return Results.Ok();
+// });
+app.MapPut("/products/{code}", ([FromRoute] int code, [FromBody] Product product) => {
     //obtem o produto
-    var productSaved = ProductData.getProduct(product.code);
+    var productSaved = ProductData.getProduct(code);
     //edita produto
     productSaved.name = product.name;
     return Results.Ok();
@@ -87,6 +97,13 @@ public static class ProductData {
 }
 
 public class Product {
+    public int Id { get; set; }
     public int code { get; set; }
     public string name { get; set; }
+}
+
+public class AppDBContext : DbContext {
+    public DbSet<Product> Products { get; set; } //mapeia a classe para o banco de dados
+
+    protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlServer("Server=CFBPQX2;Database=DB;Trusted_Connection=True");
 }
